@@ -13,7 +13,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPJNN3HGZX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-YPJNN3HGZX');
@@ -48,7 +51,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Practical IoT Hacking</a></h1>
+      <h1 class="logo me-auto d-none d-md-block"><a href="index.html">Practical IoT Hacking</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -59,7 +62,9 @@
           <li><a href="#authors">Authors</a></li>
         </ul>
       </nav><!-- .nav-menu -->
-      <a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto">Buy it Now!</a>
+
+      <div class="d-none d-md-block"><a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto">Buy it Now!</a></div>
+      <div class="d-block d-md-none m-auto"><a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto m-auto">Buy <b>Practical IoT Hacking</b> Now!</a></div>
 
 
     </div>
@@ -69,24 +74,25 @@
   <section id="hero" class="d-flex align-items-center">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-6 col-md-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
           <div>
             <h1>Practical IoT Hacking</h1>
             <h2>The Definitive Guide to Attacking the Internet of Things</h2>
             <h3><em>by Fotios Chantzis, Ioannis Stais, Paulino Calderon, Evangelos Deirmentzoglou, Beau Woods</em></h3>
-          </div>
-          <div class="mt-4 mb-4">
             <h2>Available March 2, 2021</h2>
           </div>
-          <div class="d-lg-flex">
-            <!--             <a href="#about" class="btn-buy-now scrollto">Get Started</a> -->
-            <!--             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
-            <a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto">Buy from Amazon</a>
-            <a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto">Buy from No Starch Press</a>
+
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <div class="d-flex flex-wrap justify-content-center">
+              <!--             <a href="#about" class="btn-buy-now scrollto">Get Started</a> -->
+              <!--             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
+              <div class="m-2 m-lg-0 me-lg-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto m-auto">Amazon</a></div>
+              <div class="m-2 m-lg-0 ms-lg-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto m-auto">No Starch Press</a></div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
           <img src="assets/img/practical-iot-hacking-cover.png" class="img-fluid animated" alt="">
         </div>
       </div>
@@ -130,8 +136,14 @@
               <li><i class="ri-check-double-line"></i>How to develop your own NFC fuzzer using Proxmark3</li>
               <li><i class="ri-check-double-line"></i>Wi-Fi association attacks against wireless clients, and ways of abusing Wi-Fi Direct</li>
               <li><i class="ri-check-double-line"></i>Techniques for hacking the smart home, like jamming wireless alarms, playing back IP camera feeds, and taking control of a smart treadmill</li>
-              <a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto">Buy from Amazon</a>
-              <a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto">Buy from No Starch Press</a>
+              <div class="d-flex justify-content-center justify-content-lg-start">
+                <div class="d-flex flex-wrap justify-content-center">
+                  <!--             <a href="#about" class="btn-buy-now scrollto">Get Started</a> -->
+                  <!--             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
+                  <div class="m-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6/ref=dbs_a_def_rwt_bibl_vppi_i0" class="buy-now-btn scrollto m-auto">Amazon</a></div>
+                  <div class="m-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto m-auto">No Starch Press</a></div>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -153,7 +165,8 @@
               <div class="member-info">
                 <h4>FOTIOS (FOTIS) CHANTZIS</h4>
                 <span>Lead Author</span>
-                <p><b>FOTIOS (FOTIS) CHANTZIS</b> is laying the foundation for a safe and secure Artificial General Intelligence (AGI) at OpenAI. He has been a member of the core Nmap development team since 2009 and is the creator of Ncrack, Nmap’s network authentication cracking tool.</p>
+                <p><b>FOTIOS (FOTIS) CHANTZIS</b> is laying the foundation for a safe and secure Artificial General Intelligence (AGI) at OpenAI. He has been a member of the core Nmap development team since 2009 and is the creator of Ncrack, Nmap’s
+                  network authentication cracking tool.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -185,7 +198,8 @@
               <div class="member-info">
                 <h4>PAULINO CALDERON</h4>
                 <span>Co-Author</span>
-                <p><b>PAULINO CALDERON</b> is a published author and international speaker with over 12 years of experience in network and application security. When he isn’t traveling to security conferences or consulting for Fortune 500 companies with Websec, a company he co-founded in 2011, he spends peaceful days enjoying the beach in Cozumel, Mexico.</p>
+                <p><b>PAULINO CALDERON</b> is a published author and international speaker with over 12 years of experience in network and application security. When he isn’t traveling to security conferences or consulting for Fortune 500 companies
+                  with Websec, a company he co-founded in 2011, he spends peaceful days enjoying the beach in Cozumel, Mexico.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -201,7 +215,8 @@
               <div class="member-info">
                 <h4>EVANGELOS DEIRMENTZOGLOU</h4>
                 <span>Co-Author</span>
-                <p><b>EVANGELOS DEIRMENTZOGLOU</b> is an information security professional interested in solving security problems at scale. He led and structured the cybersecurity capability of the financial tech startup Revolut. A member of the open-source community since 2015, he has made multiple contributions to Nmap and Ncrack.</p>
+                <p><b>EVANGELOS DEIRMENTZOGLOU</b> is an information security professional interested in solving security problems at scale. He led and structured the cybersecurity capability of the financial tech startup Revolut. A member of the
+                  open-source community since 2015, he has made multiple contributions to Nmap and Ncrack.</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -217,7 +232,8 @@
               <div class="member-info">
                 <h4>BEAU WOODS</h4>
                 <span>Co-Author</span>
-                <p><b>BEAU WOODS</b> is a cyber safety innovation fellow with the Atlantic Council, a Senior Advisor and Strategist with the Cybersecurity and Information Security Agency, and a leader with the I Am The Cavalry grassroots initiative. He is also the founder and CEO of Stratigos Security and sits on the board of several hacker-based nonprofits.</p>
+                <p><b>BEAU WOODS</b> is a cyber safety innovation fellow with the Atlantic Council, a Senior Advisor and Strategist with the Cybersecurity and Information Security Agency, and a leader with the I Am The Cavalry grassroots initiative.
+                  He is also the founder and CEO of Stratigos Security and sits on the board of several hacker-based nonprofits.</p>
                 <div class="social align-items-end">
                   <a href="https://twitter.com/beauwoods"><i class="ri-twitter-fill"></i></a>
                   <a href="https://linkedin.com/in/beauwoods"><i class="ri-linkedin-box-fill"></i> </a>
