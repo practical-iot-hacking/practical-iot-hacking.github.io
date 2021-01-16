@@ -612,10 +612,6 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.authors .member:hover {
-  transform: translateY(-10px);
-}
-
 .authors .member .member-info {
   padding-left: 30px;
 }
