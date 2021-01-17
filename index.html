@@ -63,8 +63,8 @@
         </ul>
       </nav><!-- .nav-menu -->
 
-      <div class="d-none d-md-block"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn scrollto">Buy it Now!</a></div>
-      <div class="d-block d-md-none m-auto"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn scrollto m-auto">Buy <b>Practical IoT Hacking</b> Now!</a></div>
+      <div class="d-none d-md-block"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn">Buy it Now!</a></div>
+      <div class="d-block d-md-none m-auto"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn m-auto">Buy <b>Practical IoT Hacking</b> Now!</a></div>
 
 
     </div>
@@ -85,10 +85,10 @@
 
           <div class="d-flex justify-content-center justify-content-lg-start" style="margin-top: 3rem!important;">
             <div class="d-flex flex-wrap justify-content-center">
-              <!--             <a href="#about" class="btn-buy-now scrollto">Get Started</a> -->
+              <!--             <a href="#about" class="btn-buy-now">Get Started</a> -->
               <!--             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a> -->
-              <div class="m-2 m-lg-0 me-lg-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn scrollto m-auto">Amazon</a></div>
-              <div class="m-2 m-lg-0 ms-lg-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto m-auto">No Starch Press</a></div>
+              <div class="m-2 m-lg-0 me-lg-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn m-auto">Amazon</a></div>
+              <div class="m-2 m-lg-0 ms-lg-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn m-auto">No Starch Press</a></div>
             </div>
           </div>
         </div>
@@ -138,9 +138,9 @@
               <li><i class="ri-check-double-line"></i>Techniques for hacking the smart home, like jamming wireless alarms, playing back IP camera feeds, and taking control of a smart treadmill</li>
               <div class="d-flex justify-content-center">
                 <div class="d-flex flex-wrap justify-content-center">
-                  <!-- <div class="m-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn scrollto m-auto">Amazon</a></div> -->
-                  <!-- <div class="m-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto m-auto">No Starch Press</a></div> -->
-                  <div class="m-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn scrollto m-auto">Get a free chapter from No Starch Press</a></div>
+                  <!-- <div class="m-2"><a href="https://www.amazon.com/gp/product/B085BVVSN6" class="buy-now-btn m-auto">Amazon</a></div> -->
+                  <!-- <div class="m-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn m-auto">No Starch Press</a></div> -->
+                  <div class="m-2"><a href="https://nostarch.com/practical-iot-hacking" class="buy-now-btn m-auto">Get a free chapter from No Starch Press</a></div>
                 </div>
               </div>
           </div>
@@ -283,25 +283,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-  /**
-  * Function that registers a click on an outbound link in Analytics.
-  * This function takes a valid URL string as an argument, and uses that URL string
-  * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-  * using 'navigator.sendBeacon' in browser that support it.
-  */
-  var getOutboundLink = function(url,outboundDestination,pageSection) {
-    gtag('event', 'click', {
-      'event_category': 'outbound',
-      'event_label': url,
-      'event_pageSection': pageSection,
-      'event_outboundDestination': outboundDestination,
-      'transport_type': 'beacon',
-      'event_callback': function(){document.location = url;}
-    });
-  }
-  </script>
 
 </body>
 
